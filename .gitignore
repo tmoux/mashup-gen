@@ -1,0 +1,6 @@
+handle.txt
+geckodriver.log
+__pycache__/
+pyvenv.cfg
+bin/
+lib/
