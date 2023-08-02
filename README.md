@@ -40,6 +40,3 @@ options:
                         Duration of contest (minutes) (default: 120)
   --min_contest_id MIN_CONTEST_ID
                         Minimum contest id (useful for filtering out old problems) (default: 500)
-```
-
-Note that login information is expected to be stored in a file 
