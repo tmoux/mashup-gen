@@ -21,10 +21,12 @@ To run the script, run `python3 create_mashup.py [args]`.
 
 Most information can be found by running `python3 create_mashup.py -h`:
 ```
-usage: create_mashup.py [-h] [-n HANDLE] [--name NAME] [-d DURATION] [--min_contest_id MIN_CONTEST_ID]
+usage: create_mashup.py [-h] [-n HANDLE] [--name NAME] [-d DURATION]
+                        [--min_contest_id MIN_CONTEST_ID]
                         min_rating max_rating problem_count
 
-A script to automatically choose problems in a given rating range and create a mashup contest
+A script to automatically choose problems in a given rating range
+and create a mashup contest
 
 positional arguments:
   min_rating            Min rating of problem
@@ -34,9 +36,14 @@ positional arguments:
 options:
   -h, --help            show this help message and exit
   -n HANDLE, --handle HANDLE
-                        Codeforces handle (default: [default-handle])
-  --name NAME           Name of mashup contest (default: Practice Mashup)
+                        Codeforces handle (default:
+                        ['default-handle'])
+  --name NAME           Name of mashup contest (default: Practice
+                        Mashup)
   -d DURATION, --duration DURATION
                         Duration of contest (minutes) (default: 120)
   --min_contest_id MIN_CONTEST_ID
-                        Minimum contest id (useful for filtering out old problems) (default: 500)
+                        Minimum contest id (useful for filtering out
+                        old problems) (default: 650)
+```
+You can add additional users using the `--handle` option to exclude problems solved by any of the listed users (e.g., for selecting problems for team practices).

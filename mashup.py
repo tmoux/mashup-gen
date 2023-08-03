@@ -38,5 +38,5 @@ def create_mashup(problems, MASHUP_NAME, MASHUP_DURATION, USERNAME, PASSWORD):
             EC.element_to_be_clickable((By.CLASS_NAME, "submit")))
     submitButton.submit()
 
-    input("Press Enter to close...")
+    # input("Press Enter to close...")
     driver.close()
